@@ -2,7 +2,7 @@
 
 A complete, free, open-source video production pipeline for [Hermes Agent](https://hermes-agent.nousresearch.com/) — capture, designed authoring, and headless post-processing, wired together so an agent can take a request from "make me a demo" to a finished, platform-ready MP4.
 
-No subscriptions. No watermarks. No paid tiers required.
+Free for personal and commercial use, with no watermarks. Optional paid cloud tiers exist — HyperFrames cloud rendering, and Runway/Shotstack in the video-editing skill — but the entire local pipeline runs without them.
 
 ## What it is
 
@@ -133,6 +133,29 @@ Both live in `patches/video-editing.py` and are idempotent.
 ## Contributing
 
 Upstream fixes belong upstream. The scenedetect fix is already an open PR against `argus-metis/hermes-video-editing`; improvements to the installer or router skill belong here.
+
+## Credits
+
+This is an integration layer — it writes no video code of its own. It exists
+because these three projects do:
+
+| Project | Maintained by | License | Upstream |
+|---|---|---|---|
+| **OpenScreen** | getopenscreen — community continuation of Siddharth Vaddem's original | MIT | https://github.com/getopenscreen/openscreen |
+| **HyperFrames** | HeyGen | Apache-2.0 | https://github.com/heygen-com/hyperframes |
+| **hermes-video-editing** | Argus-Metis | MIT | https://github.com/argus-metis/hermes-video-editing |
+
+Used but not bundled:
+
+- [Hermes Agent](https://hermes-agent.nousresearch.com/) — the host agent.
+- [scenedetect](https://github.com/Breakthrough/PySceneDetect) — scene detection, a
+  dependency installed into the video-editing venv.
+
+OpenScreen is the community continuation of the project created by
+[Siddharth Vaddem](https://github.com/siddharthvaddem/openscreen), who archived the
+original after v1.5.0 and approved its continuation under the same name and license.
+
+Full notices: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## License
 

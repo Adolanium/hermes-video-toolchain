@@ -75,6 +75,7 @@ preflight() {
 # -----------------------------------------------------------------------------
 install_openscreen() {
   log "OpenScreen"
+  # Source: https://github.com/getopenscreen/openscreen  (MIT)
   mkdir -p "$OPENSCREEN_DIR"
 
   if [ "$OS" = "Linux" ]; then
@@ -140,6 +141,7 @@ NOTE
 # -----------------------------------------------------------------------------
 install_hyperframes() {
   log "HyperFrames"
+  # Source: https://github.com/heygen-com/hyperframes  (Apache-2.0)
   export PATH="$NPM_GLOBAL/bin:$PATH"
 
   if command -v hyperframes >/dev/null 2>&1; then
@@ -164,6 +166,7 @@ install_hyperframes() {
 # -----------------------------------------------------------------------------
 install_video_editing() {
   log "hermes-video-editing"
+  # Source: https://github.com/argus-metis/hermes-video-editing  (MIT)
 
   if [ -d "$VIDEO_EDITING_DIR/.git" ]; then
     ok "repo present at $VIDEO_EDITING_DIR"

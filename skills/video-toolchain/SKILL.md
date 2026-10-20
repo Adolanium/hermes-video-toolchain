@@ -161,6 +161,17 @@ V=~/.hermes/video-editing/scripts
   the video-editing skill before promising a length.
 - **Temp files are large.** Clean up between stages; keep an eye on free disk.
 
+## Credits
+
+Third-party components installed by this toolchain — each retains its own license:
+
+- **OpenScreen** (MIT) — https://github.com/getopenscreen/openscreen
+- **HyperFrames** (Apache-2.0) — https://github.com/heygen-com/hyperframes
+- **hermes-video-editing** (MIT) — https://github.com/argus-metis/hermes-video-editing
+
+Full notices: [hermes-video-toolchain](https://github.com/rahlquist/hermes-video-toolchain)
+→ `THIRD_PARTY_NOTICES.md`.
+
 ## Related skills
 
 - `hyperframes` — router + capability map for HyperFrames (read first for any
