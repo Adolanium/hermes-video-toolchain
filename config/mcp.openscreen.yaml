@@ -1,0 +1,14 @@
+# OpenScreen MCP server — Hermes config snippet
+#
+# The installer adds this automatically. To add it by hand, merge it into the
+# existing `mcp_servers:` mapping in ~/.hermes/config.yaml (do NOT create a
+# second top-level `mcp_servers:` key).
+#
+# Requires the OpenScreen CLI on PATH. With this repo's installer that is
+# ~/.local/bin/openscreen.
+
+  openscreen:
+    command: /home/rahlquist/.local/bin/openscreen
+    args:
+      - mcp
+    enabled: true

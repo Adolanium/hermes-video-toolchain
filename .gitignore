@@ -1,0 +1,11 @@
+# Editors / OS
+.DS_Store
+*.swp
+*~
+
+# Local test scratch
+scratch/
+
+# Python
+__pycache__/
+*.pyc
